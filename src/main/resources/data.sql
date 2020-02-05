@@ -1,0 +1,12 @@
+create TABLE PRODUCT (
+ ID INT(5) PRIMARY KEY,
+ USER_ID VARCHAR(15),
+ REFERENCE VARCHAR(20) ,
+ NAME VARCHAR(20) ,
+ DESCRIPTION VARCHAR(80) ,
+ LAST_MODIFIED_DATE TIMESTAMP,
+ CREATED_DATE TIMESTAMP,
+ VERSION INT(3)
+ );
+
+ insert into PRODUCT  values( 1, 'User123','PR_MANCHI_BISKIT', 'Manchi Biskit', 'Description',current_timestamp, null ,0);
